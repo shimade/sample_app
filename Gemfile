@@ -9,6 +9,11 @@ gem 'sqlite3'
 gem 'rspec-rails','2.13.1'
 end
 
+group :test do
+ gem 'selenium-webdriver', '2.35.1'
+ gem 'capybara', '2.1.0'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -29,6 +34,8 @@ group :doc do
  gem 'sdoc', '~> 0.4.0',require:false
 end
 
+gem 'minitest'
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
@@ -48,5 +55,8 @@ group :production do
  gem 'pg','0.15.1'
  gem 'rails_12factor','0.0.2'
 end
+
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.11.0'
 
 
